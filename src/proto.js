@@ -26,8 +26,8 @@ export default class Proto {
         return this.isString(collec) ? collec : JSON.stringify(collec);
     }
     
-    toArray(o) {
-        return Array.from(o);
+    toChars(s) {
+        return Array.from(s);
     }
     
     isArray(o) {
