@@ -18,7 +18,7 @@ export default class Proto {
         return JSON.stringify(collec);
     }
     
-    toNumber(s) {
+    toNum(s) {
         return Number(s);
     }
     

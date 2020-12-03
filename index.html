@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Outpost</title>
+    <title>Proto</title>
 </head>
 <body>
     <h1>hello</h1>
 
-    <script src="dest/outpost.min.js"></script>
+    <script src="dest/proto.min.js"></script>
     <script>
-        Outpost.plugin(function(_) {
+        Proto.plugin(function(_) {
             function DOMLang(selector) {
                 if (selector.constructor.name === "String") {
                     const els = document.querySelectorAll(selector);
@@ -53,12 +53,12 @@
 
 
     <script>
-        const _ = new Outpost();
-        _.fetch("/api").then(() => {
+const _ = new Proto();
 
-        }).catch(err => {
-            console.log(err);
-        })
+const num1 = _.toNum("120");
+const num2 = _.toNum("4.3");
+console.log(num1);
+console.log(num2);
     </script>
 </body>
 </html>
