@@ -22,7 +22,7 @@ export default class Proto {
         return Number(s);
     }
     
-    toString(collec) {
+    stringify(collec) {
         return this.isString(collec) ? collec : JSON.stringify(collec);
     }
     
