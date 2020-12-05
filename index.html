@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proto</title>
+    <title>LineOf</title>
 </head>
 <body>
     <h1>hello</h1>
 
-    <script src="dest/proto.min.js"></script>
+    <script src="dest/lineof.min.js"></script>
     <script>
-        Proto.plugin(function(_) {
+        LineOf.plugin(function(_) {
             function DOMLang(selector) {
                 if (selector.constructor.name === "String") {
                     const els = document.querySelectorAll(selector);
@@ -53,10 +53,17 @@
 
 
     <script>
-const _ = new Proto();
+const _ = new LineOf();
 
-const arr = _.toChars("hello");
-console.log(arr);
+
+
+
+const message = "hello, world!";
+const nums = [1, 2, 3, 4, 5, 6, 7, 8];
+
+console.log(_.dropFirst(message));
+console.log(_.dropFirst(nums, 2));
+
     </script>
 </body>
 </html>

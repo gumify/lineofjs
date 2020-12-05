@@ -1,14 +1,14 @@
 {
-  "name": "proto",
+  "name": "lineofjs",
   "version": "0.1.0",
   "description": "A JavaScript library for functional programming",
-  "main": "src/default.js",
+  "main": "src/lineof.js",
   "scripts": {
     "test": "mocha"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lineofapi/proto.git"
+    "url": "git+https://github.com/lineofapi/lineofjs.git"
   },
   "keywords": [
     "functional",
@@ -17,9 +17,9 @@
   "author": "Jeeva",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/lineofapi/proto/issues"
+    "url": "https://github.com/lineofapi/lineofjs/issues"
   },
-  "homepage": "https://github.com/lineofapi/proto#readme",
+  "homepage": "https://github.com/lineofapi/lineofjs#readme",
   "devDependencies": {
     "@babel/core": "^7.10.5",
     "babel-core": "^6.26.3",

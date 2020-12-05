@@ -13,7 +13,7 @@ const buffer      = require('vinyl-buffer');
 
 
 const dirs = {
-    src: "src/proto.js",
+    src: "src/lineof.js",
     dest: "dest"
 }
 
@@ -27,7 +27,7 @@ gulp.task("compile-global", function() {
     .pipe(source(dirs.src))
     .pipe(buffer())
     .pipe(maps.init())
-    .pipe(rename("proto.min.js"))
+    .pipe(rename("lineof.min.js"))
     .pipe(uglify())
     .pipe(maps.write(".maps"))
     .pipe(gulp.dest(dirs.dest));

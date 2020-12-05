@@ -1,7 +1,7 @@
 import { Http } from "./http";
 
 
-export default class Proto {
+export default class LineOf {
     constructor() {
         this.http = new Http();
     }
@@ -364,7 +364,7 @@ export default class Proto {
     }
 }
 
-Proto.prototype.escapeMap = {
+LineOf.prototype.escapeMap = {
     '&': '&amp;',
     '<': '&lt;',
     '>': '&gt;',
@@ -373,8 +373,8 @@ Proto.prototype.escapeMap = {
     '`': '&#x60;'
 };
 
-Proto.__proto__.plugin = function(callback) {
-    return callback(Proto.prototype);
+LineOf.__proto__.plugin = function(callback) {
+    return callback(LineOf.prototype);
 };
 
-if (typeof window !== "undefined") window.Proto = Proto;
+if (typeof window !== "undefined") window.LineOf = LineOf;
