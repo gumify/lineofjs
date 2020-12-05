@@ -5,7 +5,7 @@ Clone the github repo `git clone https://github.com/lineofapi/lineofjs.git` and 
 Or use CDN link
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/lineofapi/lineofjs@1.0.0/dest/lineofjs.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/lineofapi/lineofjs@1.0.0/dest/lineof.min.js"></script>
 ```
 
 [![Build Status](https://travis-ci.org/lineofapi/lineofjs.svg?branch=master)](https://travis-ci.org/lineofapi/lineofjs)
